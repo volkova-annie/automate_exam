@@ -4,3 +4,4 @@ Desktop.ini
 .DS_Store
 *.log
 static
+bower_components
