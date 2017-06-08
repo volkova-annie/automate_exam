@@ -31,8 +31,10 @@ gulp.task('styles', (done) => {
 });
 
 gulp.task('javascripts', (done) => {
-  gulp.src('src/**/*.js', 'bower_components/**/*.js')
+  gulp.src('./src/**/*.js')
+  // .pipe(rigger())
   .pipe(concat('app.js'))
+  .pipe(uglify())
   .pipe(gulp.dest('./static/'));
   done();
 });
@@ -45,13 +47,6 @@ gulp.task('views', (done) => {
 
 gulp.task('clean', () => {
   return del('static')
-});
-
-gulp.task('build', (done) => {
-    gulp.src(path.src.html)
-        .pipe(rigger())
-        .pipe(gulp.dest(path.static.all));
-    done();
 });
 
 gulp.task('build',
