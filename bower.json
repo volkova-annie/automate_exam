@@ -1,0 +1,24 @@
+{
+  "name": "automate_exam",
+  "description": "",
+  "main": "form.html",
+  "authors": [
+    "Annie"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "owl-carousel": "^1.3.2",
+    "jquery": "^3.2.1",
+    "jsrender": "^0.9.84",
+    "smartcrop": "^1.1.1",
+    "facedetection": "^0.2.1"
+  }
+}
