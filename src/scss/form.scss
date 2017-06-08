@@ -3,14 +3,14 @@
 @import "variables";
 @import "animate";
 
-%grad{
-	
-}
+
 html,body{
 	width: 100%;
 	height: 100%;
 }
-
+%grad{
+	background-image: linear-gradient(45deg, $color,$color2);
+}
 body{
 	margin:0;
 	color:#6a6f8c;
@@ -143,7 +143,7 @@ body{
 		background: none;
 		color: rgba( $gray,.6);
 		border:2px solid rgba( $gray,.6);
-		
+
 		&:hover{
 			box-shadow: 0px 0px 20px 0px rgba($gray,.1);
 			transition: box-shadow .2s ease-in-out, border .2s ease-in-out, color .2s ease-in-out;
@@ -186,7 +186,7 @@ body{
 		-webkit-text-fill-color: transparent;
 		margin-bottom:1em;
 	}
-	
+
 	.person_position{
 		font-size: 1em;
 		&:after{
